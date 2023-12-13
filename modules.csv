@@ -1,0 +1,6 @@
+#% physpath	! "([WM])[.]R([1-6])[.]PA([0-9]+)"            ! KEY # The physical path as Side, Ring (1-6, counting beamwards to gladwards), PA-No (1-16, 1 on top, 15 on bottom, odd ones upstream, even ones downstream)
+#% febexpath    ! "((?:wix|mes)[01])[.]([0-3])[.]([0-9]+)"    ! KEY # The febex path as computer, sfp-no, febex-no (0-15, typically)
+#% scpath       ! "(mes|wix)[.]([0-2])[.]([0-1])[.]([0-9]+)"  ! KEY # The slow control path as side, mrcc-no (0-2), mrcc-bus (0-1)
+#% foo 		! int 					      !     # a toy integer. It is not a key and thus does not have to be unique. 
+W.R1.PA1:	wix0.0.0:	wix.2.1.15	: 42
+M.R1.PA1:	wix1.0.0:	mes.2.0.7	: 42
